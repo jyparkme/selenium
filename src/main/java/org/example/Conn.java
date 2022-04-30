@@ -27,13 +27,13 @@ public class Conn {
 
     public Conn() {
         id = new ArrayList<>();
-        id.add("omca36");
-        id.add("omca34");
-        id.add("omca35");
-        id.add("omch33");
-        id.add("omcf09");
-        id.add("omcb05");
-        id.add("omcg23");
+        id.add("본원아이디(비번)");
+        id.add("여의도아이디(비번)");
+        id.add("강남아이디(비번)");
+        id.add("수원아이디(비번)");
+        id.add("대구아이디(비번)");
+        id.add("부산아이디(비번)");
+        id.add("광주아이디(비번)");
     }
 
     public void login(int center) throws Exception{
