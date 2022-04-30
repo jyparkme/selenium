@@ -50,7 +50,7 @@ public class Conn {
         element = driver.findElement(By.xpath("//*[@id=\"mfrm\"]/table/tbody/tr[4]/td/table/tbody/tr[3]/td/table/tbody/tr/td[3]/input"));
         element.click();
         setCheck();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         System.out.println("프로그램을 종료합니다");
         driver.close();
     }

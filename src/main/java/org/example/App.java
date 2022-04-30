@@ -22,9 +22,13 @@ public class App {
             String check = sc.nextLine();
             if (check.equals("Y")||check.equals("y")) {
                 System.out.println("센터를 선택하여 주세요");
-                System.out.println("(0.본원 1.여의도 2.강남 3.수원 4.대구 5.부산 6.광주)");
+                System.out.println("(0.본원 1.여의도 2.강남 3.수원 4.대구 5.부산 6.광주 7.전국)");
                 int center = sc.nextInt();
-                conn.login(center);
+                if (center == 7) {
+                    for (int i=0; i<7; i++) {
+                        conn.login(i);
+                    }
+                } conn.login(center);
                 break;
             } else {
                 System.out.println("다시 입력하시겠습니까? (Y/N)");
@@ -34,7 +38,7 @@ public class App {
                 }else {
                     System.out.println("종료합니다.");
                     try {
-                        Thread.sleep(3000);
+                        Thread.sleep(2000);
                     }catch (InterruptedException e) {
                         e.printStackTrace();
                     }finally {
